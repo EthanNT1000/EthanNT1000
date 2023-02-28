@@ -1,0 +1,5 @@
+cd catkin_workspace/src/
+catkin_create_pkg "pkg_name" roscpp rospy std_msgs
+
+cd catkin_workspace/
+catkin_make
