@@ -1,0 +1,20 @@
+## Run ROS
+roscore
+
+## Show running nodes
+rosnode list
+
+## Run Node
+rosrun package executable
+
+## Kill Node
+rosnode kill nodeName
+
+## Node Info
+rosnode info nodeName
+
+## Node Ping (While running)
+rosnode ping nodeName
+
+## Visualize Your ROS Graph With rqt_graph
+rosrun rqt_graph rqt_graph
