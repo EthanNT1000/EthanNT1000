@@ -1,0 +1,11 @@
+## Python
+from std_msgs.msg import String ##if topic type is String
+pub = rospy.Publisher("/Topic_Name", String, queue_size=10) ##if topic type is String
+
+rate = rospy.Rate(2)
+
+while not rospy.is_shutdown():
+  msg = String()
+  msg.data = "Message"
+  pub.publish(msg)
+  rate.sleep()
