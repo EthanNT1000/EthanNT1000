@@ -1,0 +1,35 @@
+## Create Python Node
+cd catkin_workspace/src/pkg_name/scripts
+touch node_name.py
+chmod +x node_name.py
+
+## Python Node Template
+#!/usr/bin/env python
+import rospy
+
+if __name__ == '__main__':
+  rospy.init_node("node_name")
+
+## Create C++ Node
+cd catkin_workspace/src/pkg_name/src/
+touch node_name.cpp
+
+## C++ Node Template
+#include <ros/ros.h>
+
+int main(int argc, char **argv)
+{
+  ros::init(argc, argv, "node_name");
+  ros:NodeHandle nh;
+}
+
+## Build and Run C++ Node
+cd catkin_workspace/src/pkg_name/
+nano CMakeLists.txt
+add_executable(node_cpp src/node_name.cpp)
+target_link_libraries(node_cpp ${catkin_LIBRARIES})
+
+cd catkin_workspace/
+catkin_make
+
+catkin_workspace/devel/lib/pkg_name/node_cpp
