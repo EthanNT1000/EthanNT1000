@@ -1,0 +1,7 @@
+mkdir catkin_workspace
+cd catkin_workspace/
+mkdir src
+catkin_make
+cd devel/
+source setup.bash
+echo "source ~/catkin_workspace/devel/setup.bash" >> ~/.bashrc
