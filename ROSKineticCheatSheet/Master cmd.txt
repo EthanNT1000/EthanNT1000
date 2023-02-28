@@ -4,6 +4,9 @@ roscore
 ## Show running nodes
 rosnode list
 
+## Show running topics
+rostopic list
+
 ## Run Node
 rosrun package executable
 
