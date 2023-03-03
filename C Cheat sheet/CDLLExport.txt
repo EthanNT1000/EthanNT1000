@@ -1,0 +1,16 @@
+## C++ DLL use at C#:
+
+C++:
+#define OPENBLASLIB __declspec(dllexport)
+
+extern "C" OPENBLASLIB int Func(Arg arg)
+{
+	return func(arg);
+}
+
+C#:
+[DllImport(DLL_PATH, EntryPoint = "Func", CallingConvention = CallingConvention.Cdecl)]
+private unsafe static extern int Func(Arg arg);
+
+##Intel AVX Namespace:
+#include <immintrin.h>
