@@ -37,6 +37,13 @@ Dependable Software Engineer with 2 years of experience developing embedded syst
 
 ---
 
+## Projects
+- **Rocket Sensor Firmware** (2023): Developed C++ firmware for STM32-based rocket sensor system, optimizing real-time telemetry for aerospace applications.
+- **Oscilloscope UI** (2022): Built WPF-based UI with MVVM for digital oscilloscope, improving signal visualization and user interaction.
+- **Ardupilot Learning Project** (2025): Actively studying Ardupilot and MAVLink, implementing basic drone simulations using Ardupilot SITL and exploring ROS2 integration for autonomous systems.
+
+---
+
 ## Education
 
 ### Bachelor of Science in Automation Engineering
@@ -60,12 +67,3 @@ Dependable Software Engineer with 2 years of experience developing embedded syst
 - **Protocols**: CAN Bus, LIN Bus, I2C, SPI, UART, MAVLink (Basic)
 - **Tools**: Git, Visual Studio, STM32CubeIDE, Ardupilot SITL
 - **Soft Skills**: Problem-Solving, Team Collaboration, English Proficiency (TOEFL iBT: 86)
-
----
-
-## Projects
-- **Rocket Sensor Firmware** (2023): Developed C++ firmware for STM32-based rocket sensor system, optimizing real-time telemetry for aerospace applications.
-- **Oscilloscope UI** (2022): Built WPF-based UI with MVVM for digital oscilloscope, improving signal visualization and user interaction.
-- **Ardupilot Learning Project** (2025): Actively studying Ardupilot and MAVLink, implementing basic drone simulations using Ardupilot SITL and exploring ROS2 integration for autonomous systems.
-
----
