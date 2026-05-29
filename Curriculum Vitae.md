@@ -43,6 +43,7 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 - **Oscilloscope UI** (2022): Built WPF-based UI with MVVM for digital oscilloscope, improving signal visualization and user interaction.
 - **Gazebo USV Simulation Platform** (2025): Forked the open-source ASV wave simulation, enhanced hydrodynamic physics and runtime performance, and extended it into a full Gazebo-based USV simulation environment for hardware-free testing.
 - **TD3 Ardupilot Parameter Tuner** (2025): Built a working prototype reinforcement learning pipeline using the TD3 algorithm, interfacing with the Gazebo USV simulation to automatically tune Ardupilot control parameters, reducing manual calibration effort.
+- **Pico C++ Firmware Template** (2025): Developed a general-purpose RP2040 firmware template integrating FreeRTOS, micro-ROS, and an MCP2515 CAN Bus driver with a task-based architecture for rapid embedded project setup.
 
 ---
 
@@ -53,7 +54,7 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 **September 2015 – June 2019**
 
 ### Vocational High School Diploma in Control Engineering
-**Taichung Industrial High School, Taichung City, Taiwan**<br>
+**Taichung Industrial High School, Taichung City, Taiwan**
 **September 2012 – July 2015**
 
 ---
@@ -65,7 +66,8 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 
 ## Skills
 - **Programming**: C/C++, C#, Python
-- **Frameworks**: WPF (MVVM), STM32, FreeRTOS, Ardupilot, ROS2
+- **Frameworks**: WPF (MVVM), STM32, FreeRTOS, Ardupilot, ROS2, micro-ROS
+- **Hardware**: RP2040 (Raspberry Pi Pico), MCP2515 CAN controller
 - **Protocols**: CAN Bus, LIN Bus, I2C, SPI, UART, MAVLink
 - **Simulation**: Gazebo, Ardupilot SITL, ASV Wave Simulation
 - **ML / Robotics**: TD3 (Reinforcement Learning), Autonomous Vehicle Parameter Tuning
