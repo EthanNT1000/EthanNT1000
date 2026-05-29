@@ -16,6 +16,11 @@ Firmware & Robotics Engineer based in Taiwan. I build embedded systems for aeros
 **Simulation:** Gazebo, Ardupilot SITL  
 **Other:** WPF/MVVM, ROS2, Lua
 
+## Repos
+
+- [pico-cpp-template](https://github.com/EthanNT1000/pico-cpp-template) — General-purpose RP2040 firmware template with FreeRTOS, micro-ROS, and MCP2515 CAN driver
+- [asv\_wave\_sim](https://github.com/EthanNT1000/asv_wave_sim) — Forked ASV wave simulator with enhanced hydrodynamic physics, used as a Gazebo USV simulation platform
+
 ## Links
 
 - [LinkedIn](https://www.linkedin.com/in/yi-chien-chiang-8b32032a4)
