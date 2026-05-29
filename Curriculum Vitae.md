@@ -15,7 +15,7 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 ## Work Experience
 
 ### Firmware Engineer
-**Taiwan Innovative Space Inc., Taipei, Taiwan**<br>
+**Taiwan Innovative Space Inc., Taipei, Taiwan**
 **May 2023 – Present**
 - Developed and optimized firmware for rocket sensor systems, integrating accelerometers, strain gauges, and thermocouples to enable high-precision data acquisition and real-time processing for mission-critical aerospace applications.
 - Ported C++ firmware to STM32 microcontrollers, enhancing peripheral integration (ADC, UART, SPI, I2C) and achieving modular, scalable codebases for multiple platform variants.
@@ -24,14 +24,14 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 - Deployed and configured an Ardupilot-based USV, covering full parameter tuning, sensor calibration, and a custom Lua script implementing servo failsafe logic beyond Ardupilot's built-in behavior.
 
 ### Software Engineer
-**Good Will Instrument Co., Ltd., Taipei, Taiwan**<br>
+**Good Will Instrument Co., Ltd., Taipei, Taiwan**
 **September 2021 – March 2023**
 - Developed user interface for digital storage oscilloscopes using WPF with MVVM architecture.
 - Implemented protocol decoding and analysis for CAN Bus, LIN Bus, I2C, SPI and UART, enabling accurate signal visualization and debugging for end-users.
 - Collaborated with hardware teams to integrate UI with oscilloscope firmware, ensuring seamless functionality across diverse device configurations.
 
 ### Mechatronics Engineer
-**Huro Auto Co., Ltd., Taipei, Taiwan**<br>
+**Huro Auto Co., Ltd., Taipei, Taiwan**
 **March 2021 – September 2021**
 - Built and maintained mechatronics systems for electric buses, focusing on CAN Bus network integration to ensure reliable communication between control units.
 - Conducted diagnostic testing and troubleshooting of CAN Bus systems.
@@ -49,8 +49,8 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 ## Education
 
 ### Bachelor of Science in Automation Engineering
-**National Formosa University, Yunlin County, Taiwan**<br>
-**September 2015 – June 2019**<br>
+**National Formosa University, Yunlin County, Taiwan**
+**September 2015 – June 2019**
 
 ### Vocational High School Diploma in Control Engineering
 **Taichung Industrial High School, Taichung City, Taiwan**<br>
@@ -70,4 +70,4 @@ Dependable Software/Firmware Engineer with 2 years of experience in embedded sys
 - **Simulation**: Gazebo, Ardupilot SITL, ASV Wave Simulation
 - **ML / Robotics**: TD3 (Reinforcement Learning), Autonomous Vehicle Parameter Tuning
 - **Tools**: Git, Visual Studio, STM32CubeIDE, Lua scripting
-- **Soft Skills**: Problem-Solving, Team Collaboration, English Proficiency (TOEFL iBT: 86)
+- **Soft Skills**: Problem-Solving, Team Collaboration
