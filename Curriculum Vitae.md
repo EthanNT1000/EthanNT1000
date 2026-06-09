@@ -1,75 +1,87 @@
-# YI-CHIEN CHIANG (江易謙)
-- No. 270, Dajin St., West Dist.40356 Taichung Taiwan (台中市西區大進街270號)
+# Ethan Yi-Chien Chiang (江易謙)
+
+- Taichung, Taiwan
 - Phone: +886956236659
-- Email: ethannt1000@gmail.com
-- LinkedIn: https://www.linkedin.com/in/yi-chien-chiang-8b32032a4
-- 104 Profile: https://pda.104.com.tw/profile/share/eVOMLZ7Zw5dcfq9zziaQfyJurCfRXPES
+- Email: <ethannt1000@gmail.com>
+- LinkedIn: <https://www.linkedin.com/in/yi-chien-chiang-8b32032a4>
+- GitHub: <https://github.com/EthanNT1000>
 
 ---
 
 ## Professional Summary
-Dependable Software/Firmware Engineer with 2 years of experience in embedded systems and 1.5 years in Windows Presentation Foundation (WPF). Proficient in C/C++, C#, and Python. Hands-on experience deploying and configuring Ardupilot-based USVs, building Gazebo simulation platforms, and applying reinforcement learning (TD3) for autonomous vehicle parameter tuning. Demonstrated English proficiency (TOEFL iBT: 86) and a proven track record of delivering robust, high-performance solutions for aerospace and instrumentation applications.
+
+Embedded systems engineer with 5 years of experience spanning aerospace firmware, instrumentation, and autonomous vehicles. Specializes in the intersection of low-level firmware (C/C++, STM32, FreeRTOS) and robotics autonomy — developing Ardupilot-based USVs, building Gazebo simulation platforms, and applying reinforcement learning (TD3) to automate control-parameter tuning. Proven record shipping mission-critical, high-reliability systems for rocket subsystems and precision instruments. Open to relocation and visa sponsorship.
 
 ---
 
 ## Work Experience
 
 ### Firmware Engineer
-**Taiwan Innovative Space Inc., Taipei, Taiwan**
-**May 2023 – Present**
-- Developed and optimized firmware for rocket sensor systems, integrating accelerometers, strain gauges, and thermocouples to enable high-precision data acquisition and real-time processing for mission-critical aerospace applications.
-- Ported C++ firmware to STM32 microcontrollers, enhancing peripheral integration (ADC, UART, SPI, I2C) and achieving modular, scalable codebases for multiple platform variants.
-- Designed automated environmental stress screening (ESS) test software for rocket subsystems, streamlining validation under thermal, vibration, and vacuum conditions, improving testing efficiency by 50%.
-- Collaborated with cross-functional teams to validate designs, analyze test results, and implement improvements, enhancing subsystem reliability.
-- Deployed and configured an Ardupilot-based USV, covering full parameter tuning, sensor calibration, and a custom Lua script implementing servo failsafe logic beyond Ardupilot's built-in behavior.
+
+**Taiwan Innovative Space Inc., Taipei, Taiwan** — May 2023 – Present
+
+- Rescued a stalled safety-critical ground-station firmware project (STM32F746) and delivered it within a one-month deadline: sub-GHz RF command link (AT86RF215), encrypted command framing, two-unit RTC/UDP time synchronization, and a hardware-interlocked ARM→DESTRUCT state machine.
+- Took over the dual-core (Cortex-M7/M4) STM32H7 flight software after the original developer's departure: implemented inter-core navigation-data sharing via SRAM4 shared memory and hardware semaphores, redundant flight-termination command dispatch, and a headless dual-core build/flash toolchain.
+- Resolved a critical data-loss defect in a CAN-to-UART flight sensor controller by moving sample packing into the CAN ISR with a zero-alloc circular buffer and a zero-copy DMA UART path; verified zero packet loss across a 6.4 kHz accelerometer stream (4 × 1.6 kHz) using per-packet sequence numbers and a custom InfluxDB validation tool.
+- Extended a cross-platform C++ firmware layer (libopencm3-based) across STM32 F1/F4/F7 with multiple new drivers — a calibrated microsecond timer, a zero-copy DMA UART, interrupt-driven I2C with STM32F1 bus-reset recovery, and a DPS310 pressure-sensor driver — and performed STM32H7 register-level bring-up (FDCAN, I2C) in the open-source HAL fork.
+- Developing the autopilot for an ArduPilot-based unmanned surface vehicle (USV): sensor calibration and a custom Lua servo-failsafe extending ArduPilot's native behavior, with control parameters auto-tuned by a TD3 reinforcement-learning pipeline in Gazebo simulation.
 
 ### Software Engineer
-**Good Will Instrument Co., Ltd., Taipei, Taiwan**
-**September 2021 – March 2023**
-- Developed user interface for digital storage oscilloscopes using WPF with MVVM architecture.
-- Implemented protocol decoding and analysis for CAN Bus, LIN Bus, I2C, SPI and UART, enabling accurate signal visualization and debugging for end-users.
-- Collaborated with hardware teams to integrate UI with oscilloscope firmware, ensuring seamless functionality across diverse device configurations.
+
+**Good Will Instrument Co., Ltd., Taipei, Taiwan** — September 2021 – March 2023
+
+- Developed the user interface for digital storage oscilloscopes using WPF with MVVM architecture.
+- Implemented software-based protocol decoding and analysis for CAN, LIN, I2C, SPI, and UART to support signal visualization and debugging.
 
 ### Mechatronics Engineer
-**Huro Auto Co., Ltd., Taipei, Taiwan**
-**March 2021 – September 2021**
+
+**Huro Auto Co., Ltd., Taipei, Taiwan** — March 2021 – September 2021
+
 - Built and maintained mechatronics systems for electric buses, focusing on CAN Bus network integration to ensure reliable communication between control units.
 - Conducted diagnostic testing and troubleshooting of CAN Bus systems.
+
+### Professional Development & National Service
+
+**Taiwan** — September 2019 – February 2021
+
+- Completed compulsory military service (Sep 2019 – Jan 2020).
+- Self-studied English and earned a TOEFL iBT score of 86 (ETS, September 2020).
+- Completed an electric-vehicle mechatronics training course, building the CAN Bus and EV powertrain foundation applied directly in the subsequent Mechatronics Engineer role.
 
 ---
 
 ## Projects
-- **Rocket Sensor Firmware** (2023): Developed C++ firmware for STM32-based rocket sensor system, optimizing real-time telemetry for aerospace applications.
-- **Oscilloscope UI** (2022): Built WPF-based UI with MVVM for digital oscilloscope, improving signal visualization and user interaction.
-- **Gazebo USV Simulation Platform** (2025): Forked the open-source ASV wave simulation, enhanced hydrodynamic physics and runtime performance, and extended it into a full Gazebo-based USV simulation environment for hardware-free testing.
-- **TD3 Ardupilot Parameter Tuner** (2025): Built a working prototype reinforcement learning pipeline using the TD3 algorithm, interfacing with the Gazebo USV simulation to automatically tune Ardupilot control parameters, reducing manual calibration effort.
-- **Pico C++ Firmware Template** (2025): Developed a general-purpose RP2040 firmware template integrating FreeRTOS, micro-ROS, and an MCP2515 CAN Bus driver with a task-based architecture for rapid embedded project setup.
+
+- [**Gazebo USV Simulation Platform**](https://github.com/EthanNT1000/asv_wave_sim/tree/ament_environment_hooks) (2025): Forked the open-source ASV wave simulation, enhanced hydrodynamic physics and runtime performance, and extended it into a full Gazebo-based USV simulation environment for hardware-free testing.
+- [**GStreamer UAV Video Link**](https://github.com/EthanNT1000/gst-uav-videolink) (2026): Built a low-latency video-link pipeline modeling a UAV data/video link — camera capture → H.264/H.265 encode → RTP/RTSP transport → decode/display — and measured and tuned glass-to-glass latency to [X] ms.
+- [**Pico C++ Firmware Template**](https://github.com/EthanNT1000/pico-cpp-template.git) (2025): Developed a general-purpose RP2040 firmware template integrating FreeRTOS, micro-ROS, and an MCP2515 CAN Bus driver with a task-based architecture for rapid embedded project setup.
 
 ---
 
 ## Education
 
 ### Bachelor of Science in Automation Engineering
-**National Formosa University, Yunlin County, Taiwan**
-**September 2015 – June 2019**
+
+**National Formosa University, Yunlin County, Taiwan** — September 2015 – June 2019
 
 ### Vocational High School Diploma in Control Engineering
-**Taichung Industrial High School, Taichung City, Taiwan**
-**September 2012 – July 2015**
+
+**Taichung Industrial High School, Taichung City, Taiwan** — September 2012 – July 2015
 
 ---
 
 ## Certifications
+
 - TOEFL iBT: Score of 86, Educational Testing Service (ETS), September 13, 2020
 
 ---
 
 ## Skills
+
 - **Programming**: C/C++, C#, Python
-- **Frameworks**: WPF (MVVM), STM32, FreeRTOS, Ardupilot, ROS2, micro-ROS
+- **Frameworks**: WPF (MVVM), STM32, FreeRTOS, libopencm3, Ardupilot, ROS2, micro-ROS, LwIP
 - **Hardware**: RP2040 (Raspberry Pi Pico), MCP2515 CAN controller
 - **Protocols**: CAN Bus, LIN Bus, I2C, SPI, UART, MAVLink
 - **Simulation**: Gazebo, Ardupilot SITL, ASV Wave Simulation
 - **ML / Robotics**: TD3 (Reinforcement Learning), Autonomous Vehicle Parameter Tuning
-- **Tools**: Git, Visual Studio, STM32CubeIDE, Lua scripting
-- **Soft Skills**: Problem-Solving, Team Collaboration
+- **Tools**: Git, Visual Studio, STM32CubeIDE, OpenOCD, Lua scripting
