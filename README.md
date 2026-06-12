@@ -18,8 +18,9 @@ Firmware & Robotics Engineer based in Taiwan. I build embedded systems for aeros
 
 ## Repos
 
-- [pico-cpp-template](https://github.com/EthanNT1000/pico-cpp-template) — General-purpose RP2040 firmware template with FreeRTOS, micro-ROS, and MCP2515 CAN driver
-- [asv\_wave\_sim](https://github.com/EthanNT1000/asv_wave_sim) — Forked ASV wave simulator with enhanced hydrodynamic physics, used as a Gazebo USV simulation platform
+- [**Gazebo USV Simulation Platform**](https://github.com/EthanNT1000/asv_wave_sim/tree/ament_environment_hooks) (2025): Forked the open-source ASV wave simulation, enhanced hydrodynamic physics and runtime performance, and extended it into a full Gazebo-based USV simulation environment for hardware-free testing.
+- [**GStreamer UAV Video Link**](https://github.com/EthanNT1000/gst-uav-videolink) (2026): Built a UAV video-link pipeline in C/GStreamer — camera → H.264/H.265 encode → RTP/RTSP → decode/display — with configurable encode presets, live FPS monitoring, and MAVLink VIDEO_STREAM_INFORMATION for QGroundControl auto-discovery; characterized software encoding CPU cost and latency across presets on ARM Cortex-A76 (H.264 ultrafast: ~10% CPU / 7 ms; H.265 ultrafast: ~100% CPU / 144 ms encode latency — motivating hardware encoder selection on Jetson/i.MX targets).
+- [**Pico C++ Firmware Template**](https://github.com/EthanNT1000/pico-cpp-template.git) (2025): Developed a general-purpose RP2040 firmware template integrating FreeRTOS, micro-ROS, and an MCP2515 CAN Bus driver with a task-based architecture for rapid embedded project setup.
 
 ## Links
 
